@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+</head>
+<body>
+    <!-- Step 2: Add an image to the page -->
+    <img id="hoverImage" src="tree.jpg" alt="Sample Image" style="display: block;">
+
+    <!-- Step 3: Add JavaScript to handle the hover effect -->
+    <script>
+        const image = document.getElementById('hoverImage');
+
+        // Function to hide the image on mouseover
+        image.addEventListener('mouseover', () => {
+            image.style.display = 'none';
+        });
+
+        // Optional: Function to show the image again on mouseout
+        image.addEventListener('mouseout', () => {
+            image.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
